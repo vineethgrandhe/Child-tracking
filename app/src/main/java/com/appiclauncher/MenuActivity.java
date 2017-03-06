@@ -32,7 +32,7 @@ public class MenuActivity extends AppCompatActivity {
 
     }
     public void website (View view) {
-        Intent intent = new Intent(Intent.ACTION_VIEW).setData(Uri.parse("http://idcards.krishnapushkaram.ap.gov.in:8080/childtracking/"));
+        Intent intent = new Intent(Intent.ACTION_VIEW).setData(Uri.parse("URL which cannot be shown"));
         startActivity(intent);
     }
 }
