@@ -103,28 +103,14 @@ public class JSONParser {
             if (first)
                 first = false;
             else
-//                results += "&";
                 result.append("&");
-//            result += entry.getKey();
-//            result += "=";
-//            result += entry.getValue();
 
             result.append(URLEncoder.encode(entry.getKey(), "UTF-8"));
             result.append("=");
             result.append(URLEncoder.encode(entry.getValue(), "UTF-8"));
         }
 
-//        try {
-//            URL url = new URL(result.toString());
-//            URI uri = new URI(url.getProtocol(), url.getUserInfo(), url.getHost(), url.getPort(), url.getPath(), url.getQuery(), url.getRef());
-//            String str = uri.toASCIIString();
-//            Log.d("str", str);
-//            return str;
-//        } catch (MalformedURLException e) {
-//            e.printStackTrace();
-//        } catch (URISyntaxException e) {
-//            e.printStackTrace();
-//        }
+
 
         Log.d("result.toString()", result.toString());
         return result.toString();
